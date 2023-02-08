@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: Arial;
+}
+html {
+	font-size: 62.5%;
+}
+.container {
+	height: calc(100vh + 30.1px);
+	width: calc(100% + 30.1px);
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	background: url('img-female.jpg') no-repeat center center/cover;
+	z-index: -1;
+	filter: blur(30px);
+}
+h3.text {
+	position: absolute;
+	color: #fff;
+	z-index: 2;
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+}
+footer {
+	position: absolute;
+	bottom: 7%;
+	width: 100%;
+	text-align: center;
+	color: var(--theme-color);
+	font-size: 1.5rem;
+}
+footer a {
+	text-decoration: none;
+    color: var(--theme-color);
+}
