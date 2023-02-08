@@ -4,24 +4,51 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Progress Steps</title>
+		<title>Rotating Navigation</title>
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css" />
 	</head>
 	<body>
 		<div class="container">
-			<div class="progress__container">
-				<div class="progress"></div>
-				<div class="circle active">1</div>
-				<div class="circle">2</div>
-				<div class="circle">3</div>
-				<div class="circle">4</div>
+			<div class="circle__container">
+				<div class="circle">
+					<button class="close">
+						<i class="fa fa-times"></i>
+					</button>
+					<button class="open">
+						<i class="fa fa-bars"></i>
+					</button>
+				</div>
 			</div>
-			<div class="btns">
-				<button class="btn prev" disabled>Prev</button>
-				<button class="btn next">Next</button>
+			<div class="content">
+				<h1>Pastry Blog</h1>
+				<small>- KingJoshua</small>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem labore eos expedita
+					iusto praesentium nulla sunt explicabo ducimus? Molestiae placeat tempora amet tenetur
+					dicta nemo optio et dolor totam deserunt, asperiores enim in illum eum eos eligendi
+					dolorem expedita necessitatibus molestias nihil ad ipsa doloribus commodi nostrum. Eius,
+					molestiae praesentium ullam odio nostrum facilis mollitia, quasi animi ducimus sapiente
+					voluptas natus. Quos corrupti cum architecto, quas explicabo error esse illo excepturi,
+					accusantium maiores sunt, ab reprehenderit dolorum reiciendis soluta consequuntur
+					expedita. Amet cumque, accusantium fugiat reprehenderit vel dicta beatae minus, temporibus
+					doloribus officia facere doloremque iste minima deserunt est! Animi?
+				</p>
+				<h2>Cakes</h2>
+				<img src="/img/cake-1.jpeg" alt="" srcset="" />
 			</div>
+			<footer>
+				Built with &hearts; by <a href="https://kingjoshua.netlify.app">KingJoshua</a>
+			</footer>
 		</div>
-		<footer>Built with &hearts; by <a href="https://kingjoshua.netlify.app">KingJoshua</a></footer>
+		<nav>
+			<ul>
+				<li><i class="fa fa-home"></i>Home</li>
+				<li><i class="fa fa-user"></i>About</li>
+				<li><i class="fa fa-envelope"></i>Contact</li>
+			</ul>
+		</nav>
+
 		<script src="app.js"></script>
 	</body>
 </html>
