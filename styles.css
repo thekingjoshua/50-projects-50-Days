@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: Arial;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	background-color: rgb(161, 100, 223);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.btn {
+	background-color: rebeccapurple;
+	border-radius: 0.5rem;
+	border: none;
+	color: #fff;
+	margin: 1rem;
+	padding: 1.5rem 3rem;
+	font-size: 1.2rem;
+	font-family: inherit;
+	cursor: pointer;
+}
+.btn:hover {
+	opacity: 0.9;
+}
+.btn:focus {
+	outline: none;
+}
