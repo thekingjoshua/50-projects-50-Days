@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: Arial;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	background-color: #2b88f0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+h3 {
+	color: #fff;
+	margin: 1rem 0 2rem;
+	text-align: center;
+}
+.container {
+	width: 50rem;
+}
+textarea {
+	border: none;
+	display: block;
+	width: 100%;
+	height: 10rem;
+	font-family: inherit;
+	padding: 1rem;
+	margin: 0 0 2rem;
+	font-size: 1.6rem;
+}
+.tag {
+	background-color: #f0932b;
+	color: #fff;
+	border-radius: 5rem;
+	padding: 1rem 2rem;
+	margin: 0 0.5rem 1rem 0;
+	font-size: 1.4rem;
+	display: inline-block;
+}
+.tag.highlight{
+	background-color: #273c75 ;
+}
