@@ -22,7 +22,7 @@ h3 {
 	text-align: center;
 }
 .container {
-	width: 50rem;
+	width: 30rem;
 }
 textarea {
 	border: none;
@@ -33,6 +33,7 @@ textarea {
 	padding: 1rem;
 	margin: 0 0 2rem;
 	font-size: 1.6rem;
+        resize: none;
 }
 .tag {
 	background-color: #f0932b;
