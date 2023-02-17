@@ -1,20 +1,18 @@
-'use strict';
-const counters = document.querySelectorAll('.counter');
-
-counters.forEach(counter => {
-	counter.innerHTML = '0';
-
-	const updateCounter = () => {
-		const target = +counter.getAttribute('data-target');
-		const c = +counter.innerHTML;
-		const increment = target / 300;
-
-		if (c < target) {
-			counter.innerText = `${Math.ceil(c + increment)}`;
-			setTimeout(updateCounter, 1);
-		} else {
-			counter.innerText = target;
-		}
-	};
-	updateCounter();
-});
+window.onload = function () {
+    document.querySelectorAll(".counter").forEach(async (counter) => {
+        counter.innerText = "0";
+        const getCurrentValue = () => parseInt(counter.innerText);
+        const targetValue = parseInt(counter.getAttribute("data-target"));
+        const step = Math.round(targetValue / 300);
+        do {
+            await new Promise((resolve) => {
+                setTimeout(() => {
+                    counter.innerText = getCurrentValue() + step;
+                    if (getCurrentValue() >= targetValue)
+                        counter.innerText = String(targetValue);
+                    resolve();
+                }, 50);
+            });
+        } while (getCurrentValue() < targetValue);
+    });
+};
