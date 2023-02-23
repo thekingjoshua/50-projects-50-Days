@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: Arial;
+}
+html {
+	font-size: 62.5%;
+}
+.error__modal {
+	background-color: steelblue;
+	height: 100vh;
+	width: 100%;
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	color: #fff;
+}
+body .container {
+	background-color: steelblue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.empty {
+	height: 15rem;
+	width: 15rem;
+	margin: 1rem;
+	border: solid 0.3rem black;
+	background: #fff;
+}
+.fill {
+	/* background-image: url('https://source.unsplash.com/random/150x150'); */
+	background-image: url('/img/cake-1.jpeg');
+	height: 14.5rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto auto;
+}
+.hold {
+	border: solid 0.5rem #ccc;
+}
+.hovered {
+	background-color: #333;
+	border-color: #fff;
+	border-style: dashed;
+}
+@media (max-width: 800px) {
+	body .container {
+		flex-direction: column;
+	}
+}
