@@ -17,8 +17,8 @@ function getData() {
   excerpt.innerHTML =
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis'
   profile_img.innerHTML =
-    '<img src="https://randomuser.me/api/portraits/men/45.jpg" alt="" />'
-  name.innerHTML = 'James Woods'
+    '<img src="https://randomuser.me/api/portraits/men/40.jpg" alt="" />'
+  name.innerHTML = 'John Doe'
   date.innerHTML = 'Feb 26, 2023'
 
   animated_bgs.forEach((bg) => bg.classList.remove('animated-bg'))
