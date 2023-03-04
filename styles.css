@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	font-family: Arial;
+}
+html {
+	font-size: 62.5%;
+}
+:root {
+	--theme-color: darksalmon;
+}
+body {
+	background-color: var(--theme-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+div {
+	position: absolute;
+	bottom: 2rem;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 1rem 2rem;
+	font-size: 1.8rem;
+}
+input {
+	width: 5rem;
+	padding: 0.5rem;
+	font-size: 1.8rem;
+	background-color: var(--theme-color);
+	border: none;
+	text-align: center;
+}
+input:focus {
+	outline: none;
+}
