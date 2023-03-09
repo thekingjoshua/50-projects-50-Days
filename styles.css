@@ -28,7 +28,7 @@ body {
 img {
 	width: 50rem;
 	height: 50rem;
-	object-fit: contain;
+	object-fit: cover;
 }
 .btns__container {
 	display: flex;
